@@ -11,7 +11,9 @@ namespace ItemMaster.Controllers
         // GET: Home
         public ActionResult Index()
         {
-            ViewBag.Title = "Home";
+            ViewBag.Title = "Item List";
+            ViewBag.ParentPage = "Item";
+            ViewBag.ChildPage = "Item List";
             return View();
         }
     }

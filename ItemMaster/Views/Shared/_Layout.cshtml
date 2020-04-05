@@ -16,6 +16,11 @@
 </head>
 <body>
     <!-- ============================================================== -->
+    <!-- All Jquery -->
+    <!-- ============================================================== -->
+    @Scripts.Render("~/bundles/commonjs")
+    @Scripts.Render("~/bundles/masterjs")
+    <!-- ============================================================== -->
     <!-- Preloader - style you can find in spinners.css -->
     <!-- ============================================================== -->
     <div class="preloader">
@@ -66,8 +71,8 @@
                     <!-- toggle and nav items -->
                     <!-- ============================================================== -->
                     <ul class="navbar-nav float-left mr-auto">
-                        <li class="nav-item d-none d-md-block"><a class="nav-link sidebartoggler waves-effect waves-light" href="javascript:void(0)" data-sidebartype="mini-sidebar"><i class="mdi mdi-menu font-24"></i></a></li>        
-                        
+                        <li class="nav-item d-none d-md-block"><a class="nav-link sidebartoggler waves-effect waves-light" href="javascript:void(0)" data-sidebartype="mini-sidebar"><i class="mdi mdi-menu font-24"></i></a></li>
+
                     </ul>
                     <!-- ============================================================== -->
                     <!-- Right side toggle and nav items -->
@@ -95,28 +100,28 @@
                                             <a href="javascript:void(0)" class="message-item">
                                                 <span class="btn btn-danger btn-circle"><i class="fa fa-link"></i></span>
                                                 <span class="mail-contnet">
-                                                    <h5 class="message-title">Luanch Admin</h5> <span class="mail-desc">Just see the my new admin!</span> <span class="time">9:30 AM</span>
+                                                    <span class="message-title h5">Luanch Admin</span> <span class="mail-desc">Just see the my new admin!</span> <span class="time">9:30 AM</span>
                                                 </span>
                                             </a>
                                             <!-- Message -->
                                             <a href="javascript:void(0)" class="message-item">
                                                 <span class="btn btn-success btn-circle"><i class="ti-calendar"></i></span>
                                                 <span class="mail-contnet">
-                                                    <h5 class="message-title">Event today</h5> <span class="mail-desc">Just a reminder that you have event</span> <span class="time">9:10 AM</span>
+                                                    <span class="message-title h5">Event today</span> <span class="mail-desc">Just a reminder that you have event</span> <span class="time">9:10 AM</span>
                                                 </span>
                                             </a>
                                             <!-- Message -->
                                             <a href="javascript:void(0)" class="message-item">
                                                 <span class="btn btn-info btn-circle"><i class="ti-settings"></i></span>
                                                 <span class="mail-contnet">
-                                                    <h5 class="message-title">Settings</h5> <span class="mail-desc">You can customize this template as you want</span> <span class="time">9:08 AM</span>
+                                                    <span class="message-title h5">Settings</span> <span class="mail-desc">You can customize this template as you want</span> <span class="time">9:08 AM</span>
                                                 </span>
                                             </a>
                                             <!-- Message -->
                                             <a href="javascript:void(0)" class="message-item">
                                                 <span class="btn btn-primary btn-circle"><i class="ti-user"></i></span>
                                                 <span class="mail-contnet">
-                                                    <h5 class="message-title">Pavan kumar</h5> <span class="mail-desc">Just see the my admin!</span> <span class="time">9:02 AM</span>
+                                                    <span class="message-title h5">Pavan kumar</span> <span class="mail-desc">Just see the my admin!</span> <span class="time">9:02 AM</span>
                                                 </span>
                                             </a>
                                         </div>
@@ -167,22 +172,17 @@
                 <!-- Sidebar navigation-->
                 <nav class="sidebar-nav">
                     <ul id="sidebarnav">
-                        <li class="sidebar-item">
-                            <a class="sidebar-link has-arrow waves-effect waves-dark" href="javascript:void(0)" aria-expanded="false"><i data-feather="home" class="feather-icon"></i><span class="hide-menu">Dashboard </span></a>
-                            <ul aria-expanded="false" class="collapse  first-level">
-                                <li class="sidebar-item"><a href="@Url.Action("Index","Home")" class="sidebar-link"><i class="mdi mdi-adjust"></i><span class="hide-menu"> Classic </span></a></li>
-                                <li class="sidebar-item"><a href="index2.html" class="sidebar-link"><i class="mdi mdi-adjust"></i><span class="hide-menu"> Analytical </span></a></li>
-                                <li class="sidebar-item"><a href="index3.html" class="sidebar-link"><i class="mdi mdi-adjust"></i><span class="hide-menu"> Cryptocurrency </span></a></li>
-                                <li class="sidebar-item"><a href="index4.html" class="sidebar-link"><i class="mdi mdi-adjust"></i><span class="hide-menu"> Overview </span></a></li>
-                            </ul>
-                        </li>
-                        <li class="sidebar-item"> <a class="sidebar-link waves-effect waves-dark sidebar-link" href="@Url.Action("Index","ChatApp")" aria-expanded="false"><i data-feather="message-circle" class="feather-icon"></i><span class="hide-menu">Chat Apps</span></a></li>
-                        <li class="sidebar-item"> <a class="sidebar-link waves-effect waves-dark sidebar-link" href="app-todo.html" aria-expanded="false"><i data-feather="check-circle" class="feather-icon"></i><span class="hide-menu">Todo</span></a></li>
-                        <li class="sidebar-item"> <a class="sidebar-link waves-effect waves-dark sidebar-link" href="app-calendar.html" aria-expanded="false"><i data-feather="calendar" class="feather-icon"></i><span class="hide-menu">Calendar</span></a></li>
-                        <li class="sidebar-item"> <a class="sidebar-link waves-effect waves-dark sidebar-link" href="app-taskboard.html" aria-expanded="false"><i data-feather="layout" class="feather-icon"></i><span class="hide-menu">Taskboard</span></a></li>
-                        <li class="sidebar-item"> <a class="sidebar-link waves-effect waves-dark sidebar-link" href="app-contacts.html" aria-expanded="false"><i data-feather="phone" class="feather-icon"></i><span class="hide-menu">Contact</span></a></li>
-                        <li class="sidebar-item"> <a class="sidebar-link waves-effect waves-dark sidebar-link" href="app-notes.html" aria-expanded="false"><i data-feather="book" class="feather-icon"></i><span class="hide-menu">Notes</span></a></li>
-                        <li class="sidebar-item"> <a class="sidebar-link waves-effect waves-dark sidebar-link" href="app-invoice.html" aria-expanded="false"><i data-feather="file-text" class="feather-icon"></i><span class="hide-menu">Invoice</span></a></li>
+                        @*<li class="sidebar-item">
+                                <a class="sidebar-link has-arrow waves-effect waves-dark" href="javascript:void(0)" aria-expanded="false"><i data-feather="home" class="feather-icon"></i><span class="hide-menu">Dashboard </span></a>
+                                <ul aria-expanded="false" class="collapse  first-level">
+                                    <li class="sidebar-item"><a href="@Url.Action("Index","Home")" class="sidebar-link"><i class="mdi mdi-adjust"></i><span class="hide-menu"> Classic </span></a></li>
+                                    <li class="sidebar-item"><a href="index2.html" class="sidebar-link"><i class="mdi mdi-adjust"></i><span class="hide-menu"> Analytical </span></a></li>
+                                    <li class="sidebar-item"><a href="index3.html" class="sidebar-link"><i class="mdi mdi-adjust"></i><span class="hide-menu"> Cryptocurrency </span></a></li>
+                                    <li class="sidebar-item"><a href="index4.html" class="sidebar-link"><i class="mdi mdi-adjust"></i><span class="hide-menu"> Overview </span></a></li>
+                                </ul>
+                            </li><i data-feather="edit-3" class="feather-icon"></i>*@
+                        <li class="sidebar-item"> <a class="sidebar-link waves-effect waves-dark sidebar-link" href="@Url.Action("Index","Home")" aria-expanded="false"><i data-feather="layers" class="feather-icon"></i><span class="hide-menu">Item List</span></a></li>
+                        <li class="sidebar-item"> <a class="sidebar-link waves-effect waves-dark sidebar-link" href="app-todo.html" aria-expanded="false"><i data-feather="grid" class="feather-icon"></i><span class="hide-menu">User Permission</span></a></li>
                     </ul>
                 </nav>
                 <!-- End Sidebar navigation -->
@@ -202,12 +202,12 @@
             <div class="page-breadcrumb">
                 <div class="row">
                     <div class="col-12 align-self-center">
-                        <h4 class="page-title">Search Result</h4>
+                        <h4 class="page-title">@ViewBag.ChildPage</h4>
                         <div class="d-flex align-items-center">
                             <nav aria-label="breadcrumb">
                                 <ol class="breadcrumb">
-                                    <li class="breadcrumb-item"><a href="#">Home</a></li>
-                                    <li class="breadcrumb-item active" aria-current="page">Library</li>
+                                    <li class="breadcrumb-item"><a href="#">@ViewBag.ParentPage</a></li>
+                                    <li class="breadcrumb-item active" aria-current="page">@ViewBag.ChildPage</li>
                                 </ol>
                             </nav>
                         </div>
@@ -243,24 +243,6 @@
     <!-- ============================================================== -->
     <!-- End Wrapper -->
     <div class="chat-windows"></div>
-    <!-- ============================================================== -->
-    <!-- All Jquery -->
-    <!-- ============================================================== -->
-    @Scripts.Render("~/bundles/commonjs")
-    <!-- apps -->
-    <script src="~/Assets/js/app.min.js"></script>
-    <script src="~/Assets/js/app.init.js"></script>
-    <script src="~/Assets/js/app-style-switcher.js"></script>
-    <!-- slimscrollbar scrollbar JavaScript -->
-    <script src="~/Assets/libs/perfect-scrollbar/dist/perfect-scrollbar.jquery.min.js"></script>
-    <script src="~/Assets/extra-libs/sparkline/sparkline.js"></script>
-    <!--Wave Effects -->
-    <script src="~/Assets/js/waves.js"></script>
-    <!--Menu sidebar -->
-    <script src="~/Assets/js/sidebarmenu.js"></script>
-    <!--Custom JavaScript -->
-    <script src="~/Assets/js/feather.min.js"></script>
-    <script src="~/Assets/js/custom.min.js"></script>
 </body>
 
 <!-- Mirrored from www.wrappixel.com/demos/admin-templates/xtreme-admin/html/ltr/pages-search-result.html by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 04 Apr 2020 05:53:05 GMT -->

@@ -3,5 +3,6 @@
 });
 
 $("#btnLogin").bind("click", function () {
-    alert("test");
+    alert("Login done");
+    window.location.href = "Home";
 });

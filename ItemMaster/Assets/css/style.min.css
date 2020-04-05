@@ -19616,7 +19616,7 @@ pre {
 }
 
 	.table td, .table th {
-		padding: 1rem;
+		padding: 0.5rem;
 		vertical-align: top;
 		border-top: 1px solid #e9ecef
 	}
@@ -20527,20 +20527,20 @@ a.btn.disabled, fieldset:disabled a.btn {
 
 .btn-info {
 	color: #fff;
-	background-color: #2962ff;
-	border-color: #2962ff
+	background-color: #00b0ff;
+	border-color: #00b0ff
 }
 
 	.btn-info:hover {
 		color: #fff;
-		background-color: #0346ff;
-		border-color: #0041f5
+		background-color: #03A9F4;
+		border-color: #03A9F4
 	}
 
 	.btn-info.focus, .btn-info:focus {
 		color: #fff;
-		background-color: #0346ff;
-		border-color: #0041f5;
+		background-color: #03A9F4;
+		border-color: #03A9F4;
 		box-shadow: 0 0 0 .2rem rgba(73,122,255,.5)
 	}
 
@@ -20552,8 +20552,8 @@ a.btn.disabled, fieldset:disabled a.btn {
 
 	.btn-info:not(:disabled):not(.disabled).active, .btn-info:not(:disabled):not(.disabled):active, .show > .btn-info.dropdown-toggle {
 		color: #fff;
-		background-color: #0041f5;
-		border-color: #003ee8
+		background-color: #03A9F4;
+		border-color: #03A9F4
 	}
 
 		.btn-info:not(:disabled):not(.disabled).active:focus, .btn-info:not(:disabled):not(.disabled):active:focus, .show > .btn-info.dropdown-toggle:focus {
